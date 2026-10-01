@@ -2,26 +2,26 @@
 
 ### Topics
 
-* What is FastAPI?
-* Features of FastAPI
-* FastAPI architecture
-* FastAPI vs Flask
-* FastAPI vs Django
-* Installation
-* Creating a FastAPI application
-* Running FastAPI
-* Uvicorn
-* ASGI basics
-* Routes / Endpoints
-* Path Operations
-* HTTP methods
+* What is FastAPI?----
+* Features of FastAPI------
+* FastAPI architecture---
+* FastAPI vs Flask-----
+* FastAPI vs Django-----
+* Installation-----
+* Creating a FastAPI application-----
+* Running FastAPI-----
+* Uvicorn----
+* ASGI basics----
+* Routes / Endpoints----
+* Path Operations---
+* HTTP methods----
 
   * GET
   * POST
   * PUT
   * PATCH
   * DELETE
-* Path Parameters
+* Path Parameters----
 * Query Parameters
 * Request Body
 * Response

@@ -1,0 +1,1 @@
+OpenAPI is a standard format used to describe an API's structure and behavior.
