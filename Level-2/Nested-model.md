@@ -1,0 +1,1 @@
+Nested Model means using one Pydantic model inside another Pydantic model.

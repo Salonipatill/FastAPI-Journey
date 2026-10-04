@@ -1,0 +1,1 @@
+HTTP handling = dealing with requests from the client and sending the appropriate response back.

@@ -1,0 +1,1 @@
+HTTPException is a FastAPI class used to stop the normal execution of an API request and return an HTTP error response to the client.

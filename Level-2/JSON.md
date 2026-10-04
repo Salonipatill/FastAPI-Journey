@@ -1,0 +1,1 @@
+SON (JavaScript Object Notation) is a text-based data format used to store and exchange data between systems, especially between a frontend and backend/API.

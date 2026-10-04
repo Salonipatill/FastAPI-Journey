@@ -1,0 +1,1 @@
+A Python type hint is a piece of information written in Python code that tells what data type is expected for a variable, function parameter, or function return value.
