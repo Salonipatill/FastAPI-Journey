@@ -1,4 +1,5 @@
 ## ASGI=Asynchronous Server Gateway Interface
+interface 
 
 Web Server
 
@@ -74,7 +75,7 @@ Sends the response back to the client.
 ## Compatible means able to work together properly without causing problems.
 FastAPI ↔ Uvicorn
 FastAPI is designed to work with ASGI servers such as Uvicorn.
-astAPI and Uvicorn are compatible.
+FastAPI and Uvicorn are compatible.
 Uvicorn can run a FastAPI application because they follow the same ASGI interface.
 
 ## A message is the actual piece of information being sent.

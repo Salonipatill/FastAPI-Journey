@@ -3,7 +3,7 @@ Redis is a very fast in-memory data store. It is commonly used as a cache, but i
 Think of Redis as a very fast temporary storage area for your application.
 
 
-dis primarily keeps frequently accessed data in RAM (memory).
+disk primarily keeps frequently accessed data in RAM (memory).
 
 RAM is much faster to access than traditional disk-based storage.
 
