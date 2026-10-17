@@ -7,7 +7,7 @@ FastAPI is a modern python web framework used to build APIs and Backend Applicat
 It is built on:
 
 ##Starlette-> web/HTTP functionality
-Starlette is a high performance , production-ready ASGI framework and toolkit used for building async web services in Python.
+Starlette is a high performance , production-ready ASGI *framework* and toolkit used for building async web services in Python.
 
 it supports 
 HTTP

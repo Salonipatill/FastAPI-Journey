@@ -116,3 +116,26 @@ Restrict JavaScript access	httponly=True
 Require HTTPS	secure=True
 Control cross-site sending	samesite="lax"
 Set lifetime	max_age=3600
+
+
+
+The Set-Cookie header is sent by the server to the browser to tell it to store a cookie.
+For example, when a user logs in, FastAPI can send a cookie to the browser using this header.
+
+
+FastAPI server
+Sets a cookie using response.set_cookie()
+
+```
+from fastapi import FastAPI, Response
+
+app = FastAPI()
+
+@app.get("/login")
+def login(response: Response):
+    response.set_cookie(
+        key="session_id",
+        value="abc123"
+    )
+    return {"message": "Login successful"}
+```

@@ -1,7 +1,7 @@
 ## ASGI=Asynchronous Server Gateway Interface
 interface 
 
-Web Server
+ 
 
 ASGI
 
@@ -15,11 +15,9 @@ Python Web Application
 
 Uvicorn is a web server used to run FastAPI application.
 
-Uvicorn lightweight ASGI server
-
 Used to run Python web applications
 
-Uvicorn is a ASGI sever, and ASGI is interface that Uvicorn uses to communicate with FastAPI.
+Uvicorn is a lightweight ASGI sever, and ASGI is interface that Uvicorn uses to communicate with FastAPI.
 
 ## Suppose:-
 

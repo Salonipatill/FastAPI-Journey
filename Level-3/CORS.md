@@ -1,4 +1,4 @@
-# CORS stands for Cross-Origin Resource Sharing. It’s a browser security mechanism that controls whether a web page from one origin can make requests to another origin.
+# CORS stands for Cross-Origin Resource Sharing. It’s a *browser security mechanism* that controls whether a web page from one origin can make requests to another origin.
 
 
 origin consists of three parts:Protocol + Domain + Port
