@@ -1,82 +1,78 @@
-## ASGI=Asynchronous Server Gateway Interface
-interface 
+## ASGI (Asynchronous Server Gateway Interface)
 
- 
+**ASGI** is a standard interface that defines how Python web applications communicate with ASGI servers.
 
-ASGI
+- **FastAPI** → ASGI-compatible web framework
+- **Uvicorn** → ASGI server
+- **ASGI** → Communication interface between the server and application
 
-Python Web Application
+## 1. FastAPI vs Uvicorn vs ASGI
 
+### FastAPI → Creates the API
+FastAPI is a Python web framework used to build APIs.
 
+It provides features such as:
+- Creating API routes
+- Handling HTTP methods (GET, POST, PUT, DELETE)
+- Request validation using Python type hints
+- Response handling
+- Automatic Swagger/OpenAPI documentation
+- Dependency injection
+- WebSocket support
 
-## FastAPI is an ASGI-compatible framework.
+### Uvicorn → Runs the API
+Uvicorn is a lightweight ASGI server used to run FastAPI applications.
 
-## Uvicorn is an ASGI server.
+Its responsibilities include:
+- Starting the server and listening for incoming connections
+- Receiving HTTP and WebSocket requests
+- Communicating with FastAPI through ASGI
+- Sending responses back to clients
 
-Uvicorn is a web server used to run FastAPI application.
+### ASGI → Defines the Communication
+ASGI specifies how an ASGI server and a Python web application communicate.
 
-Used to run Python web applications
+**Compatible** means two components can work together according to a shared standard.
 
-Uvicorn is a lightweight ASGI sever, and ASGI is interface that Uvicorn uses to communicate with FastAPI.
+FastAPI is designed to work with ASGI servers such as Uvicorn because they follow the ASGI interface.
 
-## Suppose:-
+## 2. How a Request Works
 
-GET/users
+**Example:** `GET /users`
 
-Uvicorn receives the HTTP request.
-Uvicorn communicates with FastAPI through ASGI.
-FastAPI finds the /users route.
-Your Python function execute.
-FastAPI creates the response.
-ASGI provides the communication interface back to Uvicorn.
-Uvicorn sends the response to the client.
+1. The client sends an HTTP request to `/users`.
+2. Uvicorn receives the request.
+3. Uvicorn communicates with FastAPI through the ASGI interface.
+4. FastAPI finds the matching `/users` route.
+5. The corresponding Python function executes.
+6. FastAPI prepares the response.
+7. Uvicorn sends the HTTP response back to the client.
 
-## Easy memory trick:
-Uvicorn = who communicates
-ASGI = how they communicate
-FastAPI = application being communicated with
+**Easy memory trick:**
 
+- **FastAPI** = Creates and handles the API
+- **Uvicorn** = Runs the server and handles network communication
+- **ASGI** = Defines how the server and application communicate
 
+## 3. Web Server
 
-## Gateway
-Connnection between two sides
-Gateway is an architectural concept
-gateway can be a separate service/application
-a component that manages/controls the path between systems.
+A **web server** is software that receives requests from clients and sends responses over a network.
 
-## Web server 
-A web server is software that receives requests from clients and sends back responses over the web.
+Uvicorn acts as the web server for a FastAPI application.
 
-## FastAPI → creates the API
-FastAPI is a Python web framework used to create APIs.
+## 4. Gateway
 
-FastAPI provides functionality such as:
-Creating API routes
-Handling HTTP methods(GET, POST, PUT, DELETE)
-Request validation
-Response handling
-Python type-hint based validation
-Automatic Swagger/OpenAPI documentation
-Dependency injection
-Websocket support
+A **gateway** is a component that connects systems or controls communication between them.
 
+It may be a separate service or application that manages the path between different systems.
 
-## Uvicorn → runs/serves the API
-Uvicorn runs the API and communicates with the network.
+**Note:** In ASGI, the word *gateway* is part of the interface's name; it does not mean that Uvicorn must be a separate API gateway service.
 
-Starts a server.
-Listens for incoming connections.
-Receives HTTP/WebSocket requests.
-Communicates with your FastAPI application through ASGI.
-Sends the response back to the client.
+## 5. Message vs Event
 
-## Compatible means able to work together properly without causing problems.
-FastAPI ↔ Uvicorn
-FastAPI is designed to work with ASGI servers such as Uvicorn.
-FastAPI and Uvicorn are compatible.
-Uvicorn can run a FastAPI application because they follow the same ASGI interface.
+- **Message:** The actual information being sent between components.
+- **Event:** An indication that something has happened.
 
-## A message is the actual piece of information being sent.
-## An event means something happened, and the message describes what happened.
+In ASGI, events are represented as Python dictionaries containing information about what is happening in a connection.
 
-ASGI events are Python dictionaries containing information about what is happening in the connection.
+For example, an incoming HTTP request is represented by an ASGI event containing details such as the request method, path, and headers.
