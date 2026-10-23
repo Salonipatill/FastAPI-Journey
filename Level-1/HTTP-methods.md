@@ -1,4 +1,4 @@
-HTTP method:- HTTP methods define the action a client wants to perform on a server resource.
+HTTP method:- HTTP methods define *the action a client wants to perform on a server resource.*
 
 GET->retrieve data /read data 
 Usually , GET should not change data

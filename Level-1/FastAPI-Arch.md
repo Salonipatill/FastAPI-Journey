@@ -1,6 +1,6 @@
 # FastAPI Architecture
 
-FastAPI architecture **describes how a request travels from the client to the backend**, gets processed, and returns a response.
+FastAPI architecture **describes how a *request travels* from the client to the backend**, gets processed, and returns a response.
 
 ## Request–Response Flow
 

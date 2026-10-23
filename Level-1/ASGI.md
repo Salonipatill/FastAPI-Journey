@@ -62,11 +62,17 @@ Uvicorn acts as the web server for a FastAPI application.
 
 ## 4. Gateway
 
-A **gateway** is a component that connects systems or controls communication between them.
+A gateway works like a bridge between two systems, allowing them to communicate with each other.
+Easy example
+Imagine a college has two departments, and you need to send a document from one department to another. The gateway acts like a connecting point that helps the information reach the correct system.
 
-It may be a separate service or application that manages the path between different systems.
+In ASGI:
+- ASGI defines how a Python web server and a Python web application communicate.
+- Uvicorn is an ASGI server that communicates with your FastAPI application.
+- Here, Gateway is part of the name Asynchronous Server Gateway Interface. It does not mean you need a separate gateway service.
+Interview answer:
 
-**Note:** In ASGI, the word *gateway* is part of the interface's name; it does not mean that Uvicorn must be a separate API gateway service.
+“A gateway is a component that connects systems and facilitates communication between them. In ASGI, Gateway is part of the interface's name, not necessarily a separate service.”
 
 ## 5. Message vs Event
 

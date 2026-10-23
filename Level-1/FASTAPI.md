@@ -2,18 +2,24 @@
 
 ## 1. What is FastAPI?
 
-FastAPI is a modern, high-performance Python web framework used to build APIs and backend applications.
+FastAPI is a modern, high-performance Python web framework used to build APIs and backend applications.[Done]
 
-## 2. FastAPI is Built On
+## FastAPI is built on 
 
-### A. Starlette → Web Functionality
+the Starlette framework for core web functionality and the Pydantic library for data validation, parsing, and serialization using Python type hints.
 
-Starlette is a lightweight ASGI framework that provides:
+*Serialization is the process of converting an object into a format such as JSON or bytes so that it can be stored or transmitted. Deserialization is the reverse process, which converts the data back into an object.*
 
-- **HTTP:** Handles HTTP requests and responses.
-- **WebSockets:** Enable real-time, two-way communication between clients and servers.
-- **Routing:** Directs requests to the correct endpoint.
-- **Background Tasks:** Runs tasks after sending a response.
+**Core web functionality refers to the fundamental operations required to receive, process, and respond to client requests in a web application.**
+
+In Starlette, core web functionality includes:
+- HTTP Request/Response Handling: Receiving HTTP requests and returning responses.
+- Routing: Mapping incoming requests to the appropriate endpoint.
+- Middleware: Processing requests and responses through intermediate components.
+- WebSocket Support: Enabling real-time, bidirectional communication.
+- Background Tasks: Executing tasks after sending a response.
+
+**A WebSocket is a communication protocol that allows a client and a server to exchange data in real time through a persistent, two-way connection.**
 
 ### B. Pydantic → Data Validation
 

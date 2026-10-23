@@ -1,6 +1,6 @@
 ## Features Of FastAPI
 
-# High performance
+# High performance[Done]
 FastAPI is designed for high-performance API developement
 
 High performance means doing a task very efficiently, quickly, and effectively,
@@ -8,12 +8,12 @@ High performance means doing a task very efficiently, quickly, and effectively,
 High performance = better speed + better efficiency + good results
 
 
-# Automatic validation
+# Automatic validation[Done]
 It uses Pydantic to validate incoming/outgoing data
 
 Pydantic is a Python library that uses type hints to validate and structure data.
 
-# Automatic validation
+# Automatic validation[Done]
 It automatically creates:
 Swagger UI
 ReDoc
@@ -21,10 +21,10 @@ OpenAPI schema
 
 # Type hints
 
-# Async support
+# Async support[Done]
 FastAPI can handle multiple tasks efficiently without waiting for one task to finish before handling another
 
-# Easy API development
+# Easy API development[Done]
 FastAPI makes API development easy by providing simple routing, automatic data validation, documentation, and async support with less code.
 
 

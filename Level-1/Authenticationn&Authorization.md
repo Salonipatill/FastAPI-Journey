@@ -1,3 +1,2 @@
-## Authentication = Who are you?
-
-## Authorization = What are you allowed to do?
+Authentication: Verifies the user's identity — Who are you?[done]
+Authorization: Determines the user's access permissions — What are you allowed to do?[Done]

@@ -15,6 +15,7 @@ Field() = additional rules
 
 
 ## 1. Normal BaseModel — most common
+
 from pydantic import BaseModel
 
 class Student(BaseModel):
@@ -23,7 +24,11 @@ class Student(BaseModel):
 
 
 ## 2. Model with default values
-class Student(BaseModel):    name: str    age: int = 18
+
+class Student(BaseModel):   
+
+ name: str   
+  age: int = 18
 
 
 Here, age is optional because it has a default value.
